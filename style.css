@@ -1,1 +1,116 @@
+/* =========================
+   ESTILO GERAL
+   ========================= */
 
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #fff8fc 0%, #f9f4ff 100%);
+  color: #3e3147;
+}
+
+.container {
+  max-width: 820px;
+  margin: 60px auto;
+  padding: 32px 24px 48px;
+}
+
+.tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background-color: #f2e7f7;
+  color: #7d4d94;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #7d4d94;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 28px;
+  color: #4d4055;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #f0e6f4;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 10px 24px rgba(80, 46, 102, 0.08);
+}
+
+.highlight {
+  background: linear-gradient(180deg, #fffdfd 0%, #fcf6ff 100%);
+  border-left: 6px solid #c892df;
+}
+
+h2 {
+  margin-top: 0;
+  color: #5e3d71;
+  font-size: 1.4rem;
+}
+
+p {
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+pre {
+  overflow-x: auto;
+  background-color: #2a2230;
+  color: #f8f2ff;
+  padding: 18px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.botao-demo {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background-color: #8f5aa8;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.botao-demo:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+.closing {
+  margin-top: 28px;
+  padding: 20px 10px 0;
+  font-size: 1.05rem;
+  color: #4c3d56;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 30px auto;
+    padding: 20px 16px 36px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
