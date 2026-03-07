@@ -20,4 +20,7 @@ html-css-como-uma-obra/
 ├── index.html
 ├── html-puro.html
 ├── style.css
-└── README.md
+├── README.md
+└── assets/
+    ├── coelho-banner.png
+    └── estrutura-site.jpg
