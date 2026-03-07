@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -23,6 +23,12 @@
     <span class="sparkle sparkle-3">✦</span>
     <span class="sparkle sparkle-4">✦</span>
   </div>
+
+  <header class="site-header">
+    <div class="header-container">
+      <p class="site-brand">HTML e CSS como uma obra</p>
+    </div>
+  </header>
 
   <main class="page">
     <section class="hero">
@@ -46,9 +52,11 @@
       </div>
 
       <div class="hero-visual" aria-hidden="true">
-        <div class="visual-card">
+        <div class="visual-panel">
+          <img src="assets/coelho-banner.png" alt="Ilustração de coelho com elementos de código" class="hero-banner">
+
           <div class="mini-window html-window">
-            <div class="window-dots">
+            <div class="window-top">
               <span></span><span></span><span></span>
             </div>
             <pre><code>&lt;h1&gt;HTML&lt;/h1&gt;
@@ -56,15 +64,13 @@
           </div>
 
           <div class="mini-window css-window">
-            <div class="window-dots">
+            <div class="window-top">
               <span></span><span></span><span></span>
             </div>
             <pre><code>h1 {
   color: #6c3eb0;
 }</code></pre>
           </div>
-
-          <div class="bunny-badge">🐇</div>
         </div>
       </div>
     </section>
@@ -91,6 +97,37 @@
 
     <div class="divider">✦ ✦ ✦</div>
 
+    <section class="section">
+      <div class="section-heading">
+        <span class="section-kicker">Estrutura da web</span>
+        <h2>Planta estrutural de um site</h2>
+      </div>
+
+      <p>
+        Assim como uma obra começa com um projeto estrutural, um site também possui uma organização base.
+        No HTML, essa estrutura é definida por elementos semânticos que indicam a função de cada parte da página.
+      </p>
+
+      <img src="assets/estrutura-site.jpg" alt="Diagrama estrutural de um site com header, nav, section, article, aside e footer" class="estrutura-imagem">
+
+      <p>
+        Nesse diagrama podemos identificar elementos como <strong>header</strong>, <strong>nav</strong>,
+        <strong>section</strong>, <strong>article</strong>, <strong>aside</strong> e <strong>footer</strong>.
+        Cada um deles representa uma parte da estrutura lógica do site.
+      </p>
+
+      <ul class="estrutura-lista">
+        <li><strong>header</strong> – área superior da página, normalmente contém título e identidade do site.</li>
+        <li><strong>nav</strong> – bloco de navegação com links importantes.</li>
+        <li><strong>section</strong> – divisão temática do conteúdo.</li>
+        <li><strong>article</strong> – conteúdo independente, como um texto ou explicação.</li>
+        <li><strong>aside</strong> – conteúdo complementar ou lateral.</li>
+        <li><strong>footer</strong> – rodapé da página com informações adicionais.</li>
+      </ul>
+    </section>
+
+    <div class="divider">🐾 ✦ 🐾</div>
+
     <section class="section" id="comparacao">
       <div class="section-heading">
         <span class="section-kicker">Comparação prática</span>
@@ -98,17 +135,17 @@
       </div>
 
       <div class="comparison-grid">
-        <article class="comparison-card plain-card">
+        <article class="comparison-card">
           <span class="card-label">Antes</span>
           <h3>Só estrutura</h3>
           <p>
             Esta versão mostra apenas o HTML. Ela funciona, tem conteúdo e o navegador entende sua estrutura,
-            mas ainda não existe um trabalho visual mais refinado.
+            mas ainda não existe um trabalho visual mais refinado. É como observar uma obra antes do acabamento.
           </p>
           <a class="text-link" href="html-puro.html">Abrir a página sem CSS</a>
         </article>
 
-        <article class="comparison-card styled-card">
+        <article class="comparison-card comparison-card-accent">
           <span class="card-label">Depois</span>
           <h3>Estrutura + acabamento</h3>
           <p>
@@ -120,7 +157,7 @@
       </div>
     </section>
 
-    <div class="divider">🐾 ✦ 🐾</div>
+    <div class="divider">✦ ✦ ✦</div>
 
     <section class="section" id="codigo">
       <div class="section-heading">
@@ -154,6 +191,28 @@ p {
   text-align: justify;
 }</code></pre>
         </article>
+      </div>
+    </section>
+
+    <div class="divider">🐾 ✦ 🐾</div>
+
+    <section class="section">
+      <div class="section-heading">
+        <span class="section-kicker">Mini animação</span>
+        <h2>Como a “obra do site” ganha acabamento</h2>
+      </div>
+
+      <p>
+        A ideia abaixo mostra de forma simplificada o raciocínio do projeto: primeiro aparece a estrutura da página,
+        depois o acabamento visual entra em ação.
+      </p>
+
+      <div class="animacao-demo">
+        <div class="bloco bloco-html">HTML</div>
+        <div class="seta">→</div>
+        <div class="bloco bloco-css">CSS</div>
+        <div class="seta">→</div>
+        <div class="bloco bloco-resultado">Página final</div>
       </div>
     </section>
 
