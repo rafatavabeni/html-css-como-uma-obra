@@ -24,4 +24,3 @@ html-css-como-uma-obra/
 └── assets/
     ├── coelho-banner.png
     └── estrutura-site.jpg
-.
